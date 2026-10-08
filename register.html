@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create account - Customer Management System</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="auth">
+    <section class="auth-brand">
+      <h1>Create your customer account</h1>
+      <p>Use your email or phone number to log in later.</p>
+    </section>
+    <section class="auth-panel">
+      <form id="register-form" class="auth-card" novalidate>
+        <h2>Create account</h2>
+        <label for="name">Full name</label>
+        <input id="name" autocomplete="name">
+        <label for="email">Email address</label>
+        <input id="email" type="email" autocomplete="email">
+        <label for="phone">Phone number</label>
+        <input id="phone" type="tel" autocomplete="tel" placeholder="9876543210">
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="new-password">
+        <div class="meter"><i id="meter-bar"></i></div>
+        <p class="hint" id="meter-text">Password strength: -</p>
+        <label for="confirm">Confirm password</label>
+        <input id="confirm" type="password" autocomplete="new-password">
+        <p id="err" class="form-error" role="alert"></p>
+        <button class="btn" type="submit">Register</button>
+        <a class="btn ghost" href="/index.html">Back to log in</a>
+      </form>
+    </section>
+  </main>
+  <script src="/js/api.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>

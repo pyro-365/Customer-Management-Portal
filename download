@@ -1,0 +1,23 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+target/
+*.class
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Data / generated files
+*.csv
+database/temp_*.sql
